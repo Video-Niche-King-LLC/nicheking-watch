@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+*.so
+
+# Virtual envs
+venv/
+.venv/
+env/
+.env
+
+# Test + coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config — should NEVER be committed (contains API keys)
+.env
+.env.local
+config/.env
+
+# Skill build artifacts
+*.skill
+
+# nicheking-watch local library (user-specific decodes)
+library/
+
+# Local fixtures used during development
+tests/fixtures/local/

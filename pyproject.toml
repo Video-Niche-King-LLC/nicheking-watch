@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nicheking-watch"
+version = "0.1.0"
+description = "Decode any YouTube video against your specific niche — Claude skill that extracts editing patterns and scores them against Niche King research data"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Video Niche King LLC", email = "jeremy@nicheking.video" }
+]
+keywords = [
+    "youtube",
+    "video-analysis",
+    "claude",
+    "claude-code",
+    "mcp",
+    "claude-skill",
+    "youtube-strategy",
+    "niche-king",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video :: Conversion",
+]
+requires-python = ">=3.10"
+dependencies = [
+    # yt-dlp handles video downloading + native caption extraction
+    "yt-dlp>=2024.1.1",
+    # Pillow used for any frame-side touchups (resize, JPEG re-encode)
+    "Pillow>=10.0",
+    # requests for the Niche King API client
+    "requests>=2.31",
+    # python-dotenv for ~/.config/nicheking/.env loading
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-asyncio>=0.21",
+    "ruff>=0.1",
+    "mypy>=1.6",
+]
+
+[project.urls]
+Homepage = "https://www.nicheking.video"
+Repository = "https://github.com/Video-Niche-King-LLC/nicheking-watch"
+Documentation = "https://github.com/Video-Niche-King-LLC/nicheking-watch#readme"
+Issues = "https://github.com/Video-Niche-King-LLC/nicheking-watch/issues"
+
+[project.scripts]
+nicheking-watch = "scripts.watch:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

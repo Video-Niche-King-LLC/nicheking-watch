@@ -1,0 +1,10 @@
+{
+  "name": "nicheking-watch",
+  "version": "0.1.0",
+  "description": "Decode any YouTube video against your specific niche. Extracts editing patterns — hook timing, cut cadence, signature moves, CTA placements — and scores them against Niche King research data. Saves the decode to the creator's Niche King library for the editorial-brief tool, script writer, and other AI editors to reference later.",
+  "author": "Video Niche King LLC",
+  "homepage": "https://www.nicheking.video",
+  "repository": "https://github.com/Video-Niche-King-LLC/nicheking-watch",
+  "license": "MIT",
+  "keywords": ["youtube", "video-analysis", "retention-brain", "niche-king", "editing-patterns"]
+}

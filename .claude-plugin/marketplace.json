@@ -1,0 +1,23 @@
+{
+  "name": "nicheking-watch",
+  "version": "0.1.0",
+  "description": "Decode any YouTube video against your specific niche — the visual data layer that feeds Niche King's Retention Brain.",
+  "owner": {
+    "name": "Video Niche King LLC",
+    "email": "jeremy@nicheking.video"
+  },
+  "plugins": [
+    {
+      "name": "nicheking-watch",
+      "source": "./plugins/nicheking-watch",
+      "description": "Decode any YouTube video against the creator's specific niche. Downloads the video, extracts scene-aware frames, pulls a timestamped transcript, fetches the creator's niche profile and research patterns from Niche King, and produces a structured editing-pattern decode adapted to the creator's voice — saved to their Niche King library so the editorial-brief tool, script writer, and other AI editors can reference it later.",
+      "version": "0.1.0",
+      "category": "video-analysis",
+      "homepage": "https://www.nicheking.video",
+      "repository": "https://github.com/Video-Niche-King-LLC/nicheking-watch",
+      "license": "MIT",
+      "keywords": ["youtube", "video-analysis", "retention-brain", "niche-king", "editing-patterns"],
+      "tags": ["youtube", "video-analysis", "niche-king", "editing-patterns"]
+    }
+  ]
+}
